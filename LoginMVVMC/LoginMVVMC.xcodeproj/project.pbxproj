@@ -26,6 +26,8 @@
 		51BEBD302947F515000991DA /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BEBD2F2947F515000991DA /* LoginCoordinator.swift */; };
 		51BEBD322947F5E4000991DA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BEBD312947F5E4000991DA /* UIColor.swift */; };
 		51BEBD362947F71A000991DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BEBD352947F71A000991DA /* LoginViewController.swift */; };
+		51BEBD38294898CF000991DA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BEBD37294898CF000991DA /* LoginView.swift */; };
+		51BEBD3A2949281F000991DA /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BEBD392949281F000991DA /* UITextField+.swift */; };
 		6D67B13913EB54FDA9C3C2FD /* Pods_LoginMVVMC_LoginMVVMCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB02D5682BC8859BD6F68789 /* Pods_LoginMVVMC_LoginMVVMCUITests.framework */; };
 		9D4C2A1ABD23D012F528FF49 /* Pods_LoginMVVMC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BDDFD6F646DAA1CD753438 /* Pods_LoginMVVMC.framework */; };
 		CCFD139BC9BF8389DA99768F /* Pods_LoginMVVMCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FBBF17014583DC64870285 /* Pods_LoginMVVMCTests.framework */; };
@@ -76,6 +78,8 @@
 		51BEBD2F2947F515000991DA /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		51BEBD312947F5E4000991DA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		51BEBD352947F71A000991DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		51BEBD37294898CF000991DA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		51BEBD392949281F000991DA /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		679D2688CB88C14343A8BC57 /* Pods-LoginMVVMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVVMC.debug.xcconfig"; path = "Target Support Files/Pods-LoginMVVMC/Pods-LoginMVVMC.debug.xcconfig"; sourceTree = "<group>"; };
 		80BDDFD6F646DAA1CD753438 /* Pods_LoginMVVMC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginMVVMC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B407E8A6F7ECF21A4E3810A3 /* Pods-LoginMVVMC-LoginMVVMCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginMVVMC-LoginMVVMCUITests.debug.xcconfig"; path = "Target Support Files/Pods-LoginMVVMC-LoginMVVMCUITests/Pods-LoginMVVMC-LoginMVVMCUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			children = (
 				51BEBD1F2947EC2E000991DA /* Constants.swift */,
 				51BEBD312947F5E4000991DA /* UIColor.swift */,
+				51BEBD392949281F000991DA /* UITextField+.swift */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				51BEBD352947F71A000991DA /* LoginViewController.swift */,
+				51BEBD37294898CF000991DA /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -522,9 +528,11 @@
 				51BEBD2E2947F2FA000991DA /* Coordinator.swift in Sources */,
 				51BEBCE92947E881000991DA /* ViewController.swift in Sources */,
 				51BEBD302947F515000991DA /* LoginCoordinator.swift in Sources */,
+				51BEBD3A2949281F000991DA /* UITextField+.swift in Sources */,
 				51BEBCEF2947E881000991DA /* LoginMVVMC.xcdatamodeld in Sources */,
 				51BEBCE52947E881000991DA /* AppDelegate.swift in Sources */,
 				51BEBCE72947E881000991DA /* SceneDelegate.swift in Sources */,
+				51BEBD38294898CF000991DA /* LoginView.swift in Sources */,
 				51BEBD202947EC2E000991DA /* Constants.swift in Sources */,
 				51BEBD1D2947EAF4000991DA /* UserModel.swift in Sources */,
 				51BEBD362947F71A000991DA /* LoginViewController.swift in Sources */,
