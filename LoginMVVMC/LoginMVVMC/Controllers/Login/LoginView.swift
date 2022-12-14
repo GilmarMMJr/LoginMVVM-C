@@ -10,6 +10,10 @@ import UIKit
 
 class LoginView: UIView {
     
+    //MARK: - Clousers
+    var onRegusterTap:(() -> Void)?
+    var onLoginTap:((_ email: String, _ password: String) -> Void)?
+    
     //MARK: - Properts
     lazy var emailLabel: UILabel = {
         let label = UILabel()
@@ -69,6 +73,8 @@ class LoginView: UIView {
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 10
         
+        button.addTarget(self, action: #selector(loginButtonTap), for: .touchUpInside)
+        
         return button
     }()
     
@@ -78,6 +84,8 @@ class LoginView: UIView {
         button.setTitle("Registrar", for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 10
+        
+        button.addTarget(self, action: #selector(registerButtonTap), for: .touchUpInside)
         
         return button
     }()
@@ -136,5 +144,18 @@ class LoginView: UIView {
     }
     
     //MARK: - Actions
+    @objc
+    func registerButtonTap() {
+        self.onRegusterTap?()
+    }
     
+    @objc
+    func loginButtonTap() {
+        if let email = emailTextField.text,
+           let password =  passwordTextField.text {
+            self.onLoginTap?(email, password)
+        } else {
+            // - Criar uma menssagem dizendo que os campos tem que ser preenchidos corretamente.
+        }
+    }
 }
